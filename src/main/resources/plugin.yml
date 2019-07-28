@@ -2,7 +2,7 @@ main: me.puyodead1.staffparticles.StaffParticles
 version: 3.0
 name: StaffParticles
 api-version: 1.14
-description: Thank You Amazing Staff!
+description: Staff Particles
 author: Puyodead1
 commands:
   staffparticles:
