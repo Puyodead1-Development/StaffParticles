@@ -21,6 +21,9 @@ public class StaffParticles extends JavaPlugin {
 
 	public void onEnable() {
 		instance = this;
+		getConfig().options().copyDefaults(true);
+		saveDefaultConfig();
+		
 		PluginManager pm = Bukkit.getServer().getPluginManager();
 		pm.registerEvents(new Events(), this);
 

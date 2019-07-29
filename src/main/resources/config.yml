@@ -1,0 +1,89 @@
+#Made by Puyodead1
+#Please do not ask for support with misconfiguration issues
+
+messages:
+  no permission: "&c&l(!) You don't have permission for that!"
+  all active particles disabled: "&a&l(!) All active particles have been disabled!"
+  particle disabled: "&a&l(!) {ACTIVE_PARTICLE} disabled!"
+  particle enabled: "&a&l(!) Particle enabled!"
+  
+settings:
+  players can change particle size: false # sets wheither players can change the the particle size, if false, particle size is set to global max particle size setting below
+  global max particle size: 250 #this is the highest any player can set a particle size
+
+inventories:
+  main menu:
+    title: "&2&lStaff Particles"
+    size: 9 #must be a multiple of 9
+    items:
+      effects:
+        display name: "&6&lEffects"
+        lore:
+          - "&a&lClick to equip effects"
+        slot: 3
+        material: FIREWORK_STAR
+      disable all effects:
+        display name: "&c&lDisable Active Particle"
+        active particles lore:
+          - "&c&lClick to disable {ACTIVE_PARTICLE} particle."
+        no active particles lore:
+          - "&c&lYou don't have any active particles."
+        slot: 5
+        material: BARRIER
+  effects menu:
+    title: "&4&l&nEffects"
+    size: 9 #must be a multiple of 9
+    items:
+      flame:
+        display name: "&6&lFlame"
+        lore:
+          - "&6Click to activate flame particle."   
+        slot: 0
+        material: BLAZE_POWDER
+      enchantment:
+        display name: "&7&lEnchantment"
+        lore:
+          - "&7Click to activate enchantment particle."
+        slot: 1
+        material: ENCHANTING_TABLE
+      portal:
+        display name: "&5&lPortal"
+        lore:
+          - "&5Click to activate portal particle."
+        slot: 2
+        material: END_PORTAL_FRAME
+      heart:
+        display name: "&c&lHeart"
+        lore:
+          - "&cClick to activate heart particle."
+        slot: 3
+        material: APPLE
+      dragon breath:
+        display name: "&d&lDragon Breath"
+        lore:
+          - "&dClick to activate dragon breath particle."
+        slot: 4
+        material: DRAGON_EGG
+      smoke:
+        display name: "&7&lSmoke"
+        lore:
+          - "&7Click to activate smoke particle."
+        slot: 5
+        material: FURNACE
+      explosion:
+        display name: "&7&lExplosion"
+        lore:
+          - "&7Click to activate explosion particle."
+        slot: 6
+        material: TNT
+      water:
+        display name: "&9&lWater"
+        lore:
+          - "&9Click to activate water particle."
+        slot: 7
+        material: WATER_BUCKET
+      back:
+        display name: "&4&lBack"
+        lore: []
+        slot: 8
+        material: BARRIER
