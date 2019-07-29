@@ -14,12 +14,14 @@ public class StaffParticles extends JavaPlugin {
 
 	public static StaffParticles instance;
 	public static HashMap<UUID, Particle> activeParticles = new HashMap<UUID, Particle>();
+	public static HashMap<UUID, Integer> activeParticleSize = new HashMap<UUID, Integer>();
 
 	public static StaffParticles getPlugin() {
 		return instance;
 	}
 
 	public void onEnable() {
+		final long started = System.currentTimeMillis();
 		instance = this;
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
@@ -28,9 +30,12 @@ public class StaffParticles extends JavaPlugin {
 		pm.registerEvents(new Events(), this);
 
 		getCommand("staffparticles").setExecutor(new StaffParticlesCommand());
+		
+		Bukkit.getConsoleSender().sendMessage(Utils.formatText("&b[&dStaffParticles] Enabled in &e" + (System.currentTimeMillis() - started) + "ms."));
 	}
 
 	public void onDisable() {
-
+		activeParticles.clear();
+		activeParticleSize.clear();
 	}
 }

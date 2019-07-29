@@ -6,6 +6,8 @@ messages:
   all active particles disabled: "&a&l(!) All active particles have been disabled!"
   particle disabled: "&a&l(!) {ACTIVE_PARTICLE} disabled!"
   particle enabled: "&a&l(!) Particle enabled!"
+  no active particles: "&c&l(!) You don't have any active particles."
+  particle size not editable: "&c&l(!) Particle size is not editable!"
   
 settings:
   players can change particle size: false # sets wheither players can change the the particle size, if false, particle size is set to global max particle size setting below
@@ -16,19 +18,33 @@ inventories:
     title: "&2&lStaff Particles"
     size: 9 #must be a multiple of 9
     items:
+      hint:
+        shown: true #should the item be shown?
+        display name: "&7&lHint"
+        lore:
+          - "&7Edit the particle size"
+          - "&7to 0 to create a 'tail' effect!"
+        slot: 0
+        material: BOOK
       effects:
         display name: "&6&lEffects"
         lore:
           - "&a&lClick to equip effects"
-        slot: 3
+        slot: 2
         material: FIREWORK_STAR
+      edit particle size:
+        display name: "&e&lEdit particle size"
+        lore:
+          - "&eClick to edit particle size"
+        slot: 4
+        material: PAPER
       disable all effects:
         display name: "&c&lDisable Active Particle"
         active particles lore:
           - "&c&lClick to disable {ACTIVE_PARTICLE} particle."
         no active particles lore:
           - "&c&lYou don't have any active particles."
-        slot: 5
+        slot: 6
         material: BARRIER
   effects menu:
     title: "&4&l&nEffects"
@@ -87,3 +103,25 @@ inventories:
         lore: []
         slot: 8
         material: BARRIER
+  particle size:
+    title: "&6&lEdit Particle Size"
+    size: 9 # must be a multiple of 9
+    items:
+      current size:
+        display name: "&eCurrent Size:"
+        lore:
+          - "&e&l{CURRENT_PARTICLE_SIZE}/{MAX_PARTICLE_SIZE}"
+        slot: 4
+        material: NETHER_STAR
+      increase size:
+        display name: "&aIncrease Size"
+        lore:
+          - "&a&l+50"
+        slot: 3
+        material: EMERALD_BLOCK
+      decrease size:
+        display name: "&cDecrease Size"
+        lore:
+          - "&c&l-50"
+        slot: 5
+        material: REDSTONE_BLOCK
