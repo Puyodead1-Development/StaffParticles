@@ -21,7 +21,7 @@ public class StaffParticlesCommand implements CommandExecutor {
 			player.sendMessage(Utils.formatText("&e&l/staffparticles effectoff - disables acive effect"));
 		} else if (args.length == 1) {
 			if (args[0].equalsIgnoreCase("effectoff") && player.hasPermission("staffgui.effectoff")) {
-				StaffParticles.activeEffects.remove(player.getUniqueId());
+				StaffParticles.activeParticles.remove(player.getUniqueId());
 				player.sendMessage(Utils.formatText("&6&lEffect disabled!"));
 			}
 			if (args[0].equalsIgnoreCase("effects") && player.hasPermission("staffgui.effects")) {

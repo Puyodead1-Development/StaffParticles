@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.UUID;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Effect;
+import org.bukkit.Particle;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,7 +13,7 @@ import me.puyodead1.staffparticles.commands.StaffParticlesCommand;
 public class StaffParticles extends JavaPlugin {
 
 	public static StaffParticles instance;
-	public static HashMap<UUID, Effect> activeEffects = new HashMap<UUID, Effect>();
+	public static HashMap<UUID, Particle> activeParticles = new HashMap<UUID, Particle>();
 
 	public static StaffParticles getPlugin() {
 		return instance;
