@@ -16,6 +16,7 @@ public class Events implements Listener {
 	public void OnInventoryClick(InventoryClickEvent e) {
 		String invTitle = e.getView().getTitle();
 		Player player = (Player) e.getWhoClicked();
+		e.setCancelled(true);
 
 		/**
 		 * Main menu click
@@ -39,7 +40,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(Utils
 					.formatText(spConfig.getString("inventories.main menu.items.edit particle size.display name")))) {
-				e.setCancelled(true);
 				if (StaffParticles.activeParticles.containsKey(player.getUniqueId())) {
 					if (spConfig.getBoolean("settings.players can change particle size")) {
 						player.getOpenInventory().close();
@@ -59,7 +59,6 @@ public class Events implements Listener {
 		if (invTitle.equals(Utils.formatText(spConfig.getString("inventories.effects menu.title")))) {
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.flame.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.FLAME);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -68,7 +67,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.enchantment.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.ENCHANTMENT_TABLE);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -77,7 +75,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.portal.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.PORTAL);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -86,7 +83,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.heart.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.HEART);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -95,7 +91,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(Utils
 					.formatText(spConfig.getString("inventories.effects menu.items.dragon breath.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.DRAGON_BREATH);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -104,7 +99,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.smoke.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.SMOKE_LARGE);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -113,7 +107,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.explosion.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.EXPLOSION_LARGE);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -122,7 +115,6 @@ public class Events implements Listener {
 			}
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(
 					Utils.formatText(spConfig.getString("inventories.effects menu.items.water.display name")))) {
-				e.setCancelled(true);
 				player.getOpenInventory().close();
 				StaffParticles.activeParticles.put(player.getUniqueId(), Particle.DRIP_WATER);
 				StaffParticles.activeParticleSize.put(player.getUniqueId(),
@@ -135,7 +127,6 @@ public class Events implements Listener {
 		 * Particle size menu click
 		 */
 		if (invTitle.equals(Utils.formatText(spConfig.getString("inventories.particle size.title")))) {
-			e.setCancelled(true);
 			if (e.getCurrentItem().getItemMeta().getDisplayName().equals(Utils
 					.formatText(spConfig.getString("inventories.particle size.items.increase size.display name")))) {
 
