@@ -23,9 +23,9 @@ public class StaffParticles extends JavaPlugin {
 	public void onEnable() {
 		final long started = System.currentTimeMillis();
 		instance = this;
-		if (!Bukkit.getVersion().contains("1.13")) {
+		if (!Bukkit.getVersion().contains("1.13") || !Bukkit.getVersion().contains("1.12")) {
 			Bukkit.getServer().getConsoleSender().sendMessage(
-					Utils.formatText("&cYou installed the wrong plugin version for 1.13! Plugin disabled!"));
+					Utils.formatText("&cYou installed the wrong plugin version for 1.13/1.12! Plugin disabled!"));
 			Bukkit.getServer().getPluginManager().disablePlugin(this);
 		} else {
 			getConfig().options().copyDefaults(true);
