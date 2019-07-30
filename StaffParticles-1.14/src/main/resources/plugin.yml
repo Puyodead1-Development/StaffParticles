@@ -1,0 +1,9 @@
+main: me.puyodead1.staffparticles.StaffParticles
+version: ${project.version}
+name: StaffParticles
+api-version: 1.14
+description: Staff Particles
+author: Puyodead1
+commands:
+  staffparticles:
+    description: Main Command
