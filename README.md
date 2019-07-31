@@ -2,13 +2,13 @@
 Staff Particles V3 - 1.13/1.14
 
 [SpigotMC Resource](https://www.spigotmc.org/resources/staff-particles.69839/)<br>
-[![Build Status](http://ci.puyodead1-development.me/buildStatus/icon?style=plastic&job=StaffParticles)](http://ci.puyodead1-development.me/job/StaffParticles/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Puyodead1-Development/StaffParticles.svg?style=plastic)
 [![Discord Server](https://discordapp.com/api/guilds/589200717277954093/embed.png)](https://discord.gg/tMzrSxQ)
 ![GitHub issues](https://img.shields.io/github/issues/Puyodead1-Development/StaffParticles.svg?style=plastic)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Puyodead1-Development/StaffParticles.svg?style=plastic)
 ![GitHub](https://img.shields.io/github/license/Puyodead1-Development/StaffParticles.svg?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Puyodead1-Development/StaffParticles.svg?style=plastic)
+[![Build Status](http://ci.puyodead1-development.me/buildStatus/icon?style=plastic&job=StaffParticles)](http://ci.puyodead1-development.me/job/StaffParticles/)
 
 Updated version of https://www.spigotmc.org/resources/staff-particles.34439/
 
