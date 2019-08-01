@@ -1,9 +1,0 @@
-main: me.puyodead1.staffparticles.StaffParticles
-version: 3.0.1
-name: StaffParticles
-api-version: 1.13
-description: Staff Particles
-author: Puyodead1
-commands:
-  staffparticles:
-    description: Main Command
