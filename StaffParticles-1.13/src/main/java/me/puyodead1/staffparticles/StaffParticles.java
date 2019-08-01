@@ -23,22 +23,16 @@ public class StaffParticles extends JavaPlugin {
 	public void onEnable() {
 		final long started = System.currentTimeMillis();
 		instance = this;
-		if (!Bukkit.getVersion().contains("1.13") || !Bukkit.getVersion().contains("1.12")) {
-			Bukkit.getServer().getConsoleSender().sendMessage(
-					Utils.formatText("&cYou installed the wrong plugin version for 1.13/1.12! Plugin disabled!"));
-			Bukkit.getServer().getPluginManager().disablePlugin(this);
-		} else {
-			getConfig().options().copyDefaults(true);
-			saveDefaultConfig();
+		getConfig().options().copyDefaults(true);
+		saveDefaultConfig();
 
-			PluginManager pm = Bukkit.getServer().getPluginManager();
-			pm.registerEvents(new Events(), this);
+		PluginManager pm = Bukkit.getServer().getPluginManager();
+		pm.registerEvents(new Events(), this);
 
-			getCommand("staffparticles").setExecutor(new StaffParticlesCommand());
+		getCommand("staffparticles").setExecutor(new StaffParticlesCommand());
 
-			Bukkit.getConsoleSender().sendMessage(Utils
-					.formatText("&b[&dStaffParticles] Enabled in &e" + (System.currentTimeMillis() - started) + "ms."));
-		}
+		Bukkit.getConsoleSender().sendMessage(Utils
+				.formatText("&b[&dStaffParticles] Enabled in &e" + (System.currentTimeMillis() - started) + "ms."));
 	}
 
 	public void onDisable() {

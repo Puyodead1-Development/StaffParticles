@@ -1,4 +1,4 @@
-package me.puyodead1.staffparticles;
+package me.puyodead1.staffparticles.utils;
 
 import java.util.Collection;
 import java.util.HashMap;

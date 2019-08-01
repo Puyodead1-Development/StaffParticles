@@ -10,6 +10,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import me.puyodead1.staffparticles.utils.UMaterial;
+
 public class Inventories {
 
 	private static FileConfiguration spConfig = StaffParticles.getPlugin().getConfig();
