@@ -156,22 +156,22 @@ inventories:
 
 ## Images:
   - Main Menu
-    - ![img1](https://proxy.spigotmc.org/fc8b17c0d48aa3d2fb6b9304691f8b5bb7e6bec4?url=https%3A%2F%2Fi.imgur.com%2F2JLs62B.png)
-    - ![img2](https://proxy.spigotmc.org/d7b274e3f97a1d4b5074894f030411c4d7b16d8b?url=https%3A%2F%2Fi.imgur.com%2FWfrBFw8.gif)
+    - ![img1](https://i.imgur.com/F2JLs62B.png)
+    - ![img2](https://i.imgur.com/FWfrBFw8.gif)
  
   - Effects Menu
-    - ![img3](https://proxy.spigotmc.org/89b1320390b8438098faeb8815d6d8fa6ba70c46?url=https%3A%2F%2Fi.imgur.com%2FbYaQRux.png)
-    - ![img4](https://proxy.spigotmc.org/a8cfb6b209288676ffe77424fa734e61349a8714?url=https%3A%2F%2Fi.imgur.com%2FIBnleJK.gif)
+    - ![img3](https://i.imgur.com/FbYaQRux.png)
+    - ![img4](https://i.imgur.com/FIBnleJK.gif)
     
   - Particle Size Editor Menu
-    - ![img5](https://proxy.spigotmc.org/2f6eb43d09dde03641919151e5efbf7f079d413f?url=https%3A%2F%2Fi.imgur.com%2FoMrdC9t.png)
+    - ![img5](https://i.imgur.com/FoMrdC9t.png)
     - [Particle Size Editor Demo Gif](https://media.giphy.com/media/VJIFAsO8EGysVAc5Q0/source.gif)
   
   - Messages
-    - ![img6](https://proxy.spigotmc.org/1c5dc5429444b06b7544826691106b6749a5cbe3?url=https%3A%2F%2Fi.imgur.com%2Ft1J34FI.png)
-    - ![img7](https://proxy.spigotmc.org/737b05a2be8f88552102cc11d1666c5dc7d66a43?url=https%3A%2F%2Fi.imgur.com%2FmPmbppb.png)
-    - ![img8](https://proxy.spigotmc.org/e12758e0bbd4b55817146dfdeac1daae412630d1?url=https%3A%2F%2Fi.imgur.com%2FyWwJdhs.png)
-    - ![img9](https://proxy.spigotmc.org/c7176f8e1539d2810fcef2ae989b9e35ff3c6e16?url=https%3A%2F%2Fi.imgur.com%2FSshbup2.png)
-    - ![img10](https://proxy.spigotmc.org/e6244091f7506468646f22eb383c9c543721d0b0?url=https%3A%2F%2Fi.imgur.com%2FFhUoazF.png)
+    - ![img6](https://i.imgur.com/Ft1J34FI.png)
+    - ![img7](https://i.imgur.com/FmPmbppb.png)
+    - ![img8](https://i.imgur.com/FyWwJdhs.png)
+    - ![img9](https://i.imgur.com/FSshbup2.png)
+    - ![img10](https://i.imgur.com/FFhUoazF.png)
 
 I will update as needed, if problems are found please report them on github or in Discord
